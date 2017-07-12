@@ -1,2 +1,2 @@
-# resume
+# Resume
 Fuwa's Web Resume!
