@@ -1,6 +1,7 @@
 <template>
   <div id="header">
     <div class="header-content">
+      <span>{{ introduction }}</span>
       <span>{{ project }}</span>
       <span>{{ education }}</span>
     </div>
@@ -12,6 +13,7 @@
     name: 'header',
     data() {
       return {
+        introduction:'Introduction',
         project: 'Project',
         education: 'Education'
       }
@@ -25,6 +27,7 @@
   }
 
   .header-content{
+    margin-right: 80px;
     display: flex;
     justify-content:flex-end;
   }
