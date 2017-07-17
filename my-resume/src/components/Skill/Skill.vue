@@ -73,9 +73,13 @@
   }
   .skills{
     column-count: 2;
+    column-gap: 100px;
   }
   li{
     display: block;
+  }
+  li:hover{
+
   }
   p{
     margin:10px;
