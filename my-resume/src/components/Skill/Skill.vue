@@ -65,15 +65,22 @@
 <style>
   #skill{
     margin-top: 150px;
+    background-color: #edecf5;
   }
   .skill-bg{
-    height: 150px;
-    margin-left: 100px;
+    height: 200px;
+    margin-left: 150px;
   }
   .skills{
     column-count: 2;
   }
   li{
-    display: inline;
+    display: block;
   }
+  p{
+    margin:10px;
+    display:inline-block;
+    width:50%;
+  }
+
 </style>
