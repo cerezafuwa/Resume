@@ -4,6 +4,7 @@
       <ul class="skills">
         <li v-for="skill in skills">
           <p>{{skill.name.toUpperCase()}}</p>
+          <div class="score-container"></div>
         </li>
 
       </ul>
@@ -68,23 +69,32 @@
     background-color: #edecf5;
   }
   .skill-bg{
-    height: 200px;
-    margin-left: 150px;
+    height: 240px;
+    margin-left: 200px;
+    width: 80%;
   }
   .skills{
     column-count: 2;
     column-gap: 100px;
   }
-  li{
-    display: block;
+  .score-container{
+    background-color: darkseagreen;
+    border-radius: 999em;
+    width: 150px;
+    height: 10px;
+    display: inline-flex;
+    margin-left: -20px;
   }
-  li:hover{
-
+  li{
+    display:block;
+  }
+  .score-container:hover{
+    background-color: firebrick;
   }
   p{
-    margin:10px;
     display:inline-block;
     width:50%;
+    margin-top: 13px;
   }
 
 </style>
