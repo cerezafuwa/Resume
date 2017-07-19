@@ -1,5 +1,6 @@
 <template>
   <div id="skill">
+    <subtitle :titleName="titleName" id="subtitle-skill"></subtitle>
     <div class="skill-bg">
       <ul class="skills">
         <li v-for="skill in skills">
@@ -13,52 +14,16 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import subtitle from './components/Subtitle/Subtitle'
+
   export default{
     name: 'skill',
+    components: {
+      'subtitle': subtitle,
+    },
     data(){
         return{
-//          "skills": [
-//            {
-//              "name": "javascript",
-//              "score": 0.7
-//            },
-//            {
-//              "name": "html",
-//              "score": 0.9
-//            },
-//            {
-//              "name": "css",
-//              "score": 0.8
-//            },
-//            {
-//              "name": "java",
-//              "score": 0.75
-//            },
-//            {
-//              "name": "c++",
-//              "score": 0.7
-//            },
-//            {
-//              "name": "c",
-//              "score": 0.6
-//            },
-//            {
-//              "name": "git",
-//              "score": 1
-//            },
-//            {
-//              "name": "photoshop",
-//              "score": 0.95
-//            },
-//            {
-//              "name": "illustrator",
-//              "score": 0.95
-//            },
-//            {
-//              "name": "corel painter",
-//              "score": 0.75
-//            }
-//          ]
+
         }
     },
     props: ['skills']
