@@ -24,11 +24,21 @@ export default {
           resume: {}
       }
   },
-  created: function () {
-    this.$http.get('/static/resume-zh-CN.json').then(resp => {
-      this.resume = resp.body
+
+  created () {
+    this.fetchData()
+  },
+  watch:{
+    '$route':'fetchData'
+  },
+  methods:{
+    fetchData(){
+      this.$http.get('/static/resume-zh-CN.json').then((response)=>{
+      this.resume = response.body
     })
+    }
   }
+
 }
 </script>
 
