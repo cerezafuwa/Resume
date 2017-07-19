@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import header from './components/Header/Header'
+import header from './components/Header/Header';
 import introduction from "./components/Introduction/Introduction";
 import skill from "./components/Skill/Skill";
 export default {

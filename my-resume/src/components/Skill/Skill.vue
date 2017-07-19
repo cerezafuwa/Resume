@@ -14,12 +14,11 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import subtitle from './components/Subtitle/Subtitle'
 
   export default{
     name: 'skill',
     components: {
-      'subtitle': subtitle,
+
     },
     data(){
         return{
