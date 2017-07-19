@@ -12,7 +12,6 @@
       <div class="introduction-rec9"></div>
       <div class="introduction-rec10"></div>
       <div class="introduction-rec11"></div>
-
     </div>
   </div>
 </template>
@@ -20,7 +19,7 @@
 export default{
     name: 'introduction'
 }
-</script>y
+</script>
 
 <style>
 

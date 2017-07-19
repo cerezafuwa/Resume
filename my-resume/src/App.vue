@@ -1,27 +1,39 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
     <v-header></v-header>
+    <introduction></introduction>
+    <skill></skill>
+
   </div>
 </template>
 
 <script>
-import header from './components/header'
+import header from './components/Header/Header'
+import introduction from "./components/Introduction/Introduction";
+import skill from "./components/Skill/Skill";
 export default {
   name: 'app',
   components: {
-    'v-header': header
+    'v-header': header,
+    'introduction': introduction,
+    'skill': skill
+  },
+  data(){
+      return{
+          resume: {}
+      }
+  },
+  created: function () {
+    this.$http.get('/static/resume-zh-CN.json').then(resp => {
+      this.resume = resp.body
+    })
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
