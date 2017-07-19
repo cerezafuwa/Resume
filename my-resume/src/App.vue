@@ -3,7 +3,7 @@
 
     <v-header></v-header>
     <introduction></introduction>
-    <skill></skill>
+    <skill :skills="resume.skills"></skill>
 
   </div>
 </template>

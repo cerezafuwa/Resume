@@ -17,50 +17,51 @@
     name: 'skill',
     data(){
         return{
-          "skills": [
-            {
-              "name": "javascript",
-              "score": 0.7
-            },
-            {
-              "name": "html",
-              "score": 0.9
-            },
-            {
-              "name": "css",
-              "score": 0.8
-            },
-            {
-              "name": "java",
-              "score": 0.75
-            },
-            {
-              "name": "c++",
-              "score": 0.7
-            },
-            {
-              "name": "c",
-              "score": 0.6
-            },
-            {
-              "name": "git",
-              "score": 1
-            },
-            {
-              "name": "photoshop",
-              "score": 0.95
-            },
-            {
-              "name": "illustrator",
-              "score": 0.95
-            },
-            {
-              "name": "corel painter",
-              "score": 0.75
-            }
-          ]
+//          "skills": [
+//            {
+//              "name": "javascript",
+//              "score": 0.7
+//            },
+//            {
+//              "name": "html",
+//              "score": 0.9
+//            },
+//            {
+//              "name": "css",
+//              "score": 0.8
+//            },
+//            {
+//              "name": "java",
+//              "score": 0.75
+//            },
+//            {
+//              "name": "c++",
+//              "score": 0.7
+//            },
+//            {
+//              "name": "c",
+//              "score": 0.6
+//            },
+//            {
+//              "name": "git",
+//              "score": 1
+//            },
+//            {
+//              "name": "photoshop",
+//              "score": 0.95
+//            },
+//            {
+//              "name": "illustrator",
+//              "score": 0.95
+//            },
+//            {
+//              "name": "corel painter",
+//              "score": 0.75
+//            }
+//          ]
         }
-    }
+    },
+    props: ['skills']
   }
 </script>
 <style>
