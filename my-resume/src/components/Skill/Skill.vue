@@ -10,7 +10,6 @@
             </svg>
           </div>
         </li>
-
       </ul>
     </div>
   </div>
@@ -64,6 +63,8 @@
   }
   .score:hover{
     background-color: #d46e7a;
+    box-shadow:0 0 5px #c0c0c0;
+
   }
 
   p{
