@@ -3,7 +3,7 @@
 
     <v-header></v-header>
     <introduction></introduction>
-    <skill :skills="resume.skills"></skill>
+    <skill :titleName="titles.skill" :skills="resume.skills"></skill>
 
   </div>
 </template>
@@ -21,10 +21,29 @@ export default {
   },
   data(){
       return{
-          resume: {}
+        resume: {},
+        language: 'zh-CN',
+        subtitles: {
+          'zh-CN': {
+            overview: '个人简介',
+            project: '项目经历',
+            skill: '专业技能',
+            info: '了解更多'
+          },
+          'En': {
+            overview: 'Overview',
+            project: 'Projects',
+            skill: 'Skills',
+            info: 'Contact Me'
+          }
+        }
       }
   },
-
+  computed: {
+    titles: function () {
+      return this.subtitles['zh-CN']
+    }
+  },
   created () {
     this.fetchData()
   },

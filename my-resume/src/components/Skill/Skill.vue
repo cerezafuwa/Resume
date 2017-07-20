@@ -14,11 +14,12 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import subtitle from "../../Subtitle/Subtitle";
 
   export default{
     name: 'skill',
     components: {
-
+      subtitle
     },
     data(){
         return{
@@ -41,9 +42,10 @@
   .skills{
     column-count: 2;
     column-gap: 100px;
+
   }
   .score-container{
-    background-color: darkseagreen;
+    background-color: #6ebcba;
     border-radius: 999em;
     width: 150px;
     height: 10px;
@@ -54,12 +56,12 @@
     display:block;
   }
   .score-container:hover{
-    background-color: firebrick;
+    background-color: #d46e7a;
   }
   p{
     display:inline-block;
     width:50%;
-    margin-top: 13px;
+    margin-top: 10px;
   }
 
 </style>
