@@ -16,7 +16,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import subtitle from "../../Subtitle/Subtitle";
+  import subtitle from "../Subtitle/Subtitle";
 
   export default{
     name: 'skill',
