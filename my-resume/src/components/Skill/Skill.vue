@@ -5,7 +5,10 @@
       <ul class="skills">
         <li v-for="skill in skills">
           <p>{{skill.name.toUpperCase()}}</p>
-          <div class="score-container"></div>
+          <div class="score-container">
+            <svg :style="getLengthStyle(skill)" class="score" xmlns:xlink="http://www.w3.org/1999/xhtml">
+            </svg>
+          </div>
         </li>
 
       </ul>
@@ -21,18 +24,22 @@
     components: {
       subtitle
     },
+    methods: {
+      getLengthStyle: function (skill) {
+        return 'width: ' + skill.score * 200 + 'px'
+      }
+    },
     data(){
         return{
-
         }
     },
-    props: ['skills']
+    props: ['skills','titleName']
   }
 </script>
 <style>
   #skill{
     margin-top: 150px;
-    background-color: #edecf5;
+    background-color: #f3f2fb;
   }
   .skill-bg{
     height: 240px;
@@ -45,23 +52,30 @@
 
   }
   .score-container{
-    background-color: #6ebcba;
+    background-color: #c1c1c1;
     border-radius: 999em;
-    width: 150px;
-    height: 10px;
+    width: 200px;
+    height: 13px;
     display: inline-flex;
-    margin-left: -20px;
+    margin-left: -50px;
   }
   li{
     display:block;
   }
-  .score-container:hover{
+  .score:hover{
     background-color: #d46e7a;
   }
+
   p{
     display:inline-block;
     width:50%;
-    margin-top: 10px;
+    margin-top: 11px;
   }
+  .score{
+    height:13px;
+    border-radius:999em;
+    background-color: #74c8de;
+  }
+
 
 </style>

@@ -34,13 +34,13 @@
     width:100px;
   }
 
-  p{
+  .subtitle-content p{
+    margin: 15px 5px;
     font-size:17px;
     font-weight:400;
   }
-
-  h2{
-    margin: 0 5px;
+  .subtitle-content h2{
+    margin: 0px 5px;
     font-size:17px;
     font-weight:400;
   }
