@@ -13,6 +13,9 @@
       <div class="introduction-rec10"></div>
       <div class="introduction-rec11"></div>
     </div>
+    <div class="introduction-content">
+      
+    </div>
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -28,6 +31,9 @@ export default{
     height: 400px;
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .introduction-content{
+
   }
   .introduction-rec1{
     position: relative;

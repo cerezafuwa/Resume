@@ -23,13 +23,19 @@
 
 <style>
   #header{
-    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #f3f2fb;
+    opacity: 0.8;
   }
 
   .header-content{
     margin-right: 80px;
     display: flex;
     justify-content:flex-end;
+    height: 60px;
+    align-items: center;
   }
 
   span{

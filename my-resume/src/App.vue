@@ -20,24 +20,24 @@ export default {
     'skill': skill
   },
   data(){
-      return{
-        resume: {},
-        language: 'zh-CN',
-        subtitles: {
-          'zh-CN': {
-            overview: '个人简介',
-            project: '项目经历',
-            skill: '专业技能',
-            info: '了解更多'
-          },
-          'En': {
-            overview: 'Overview',
-            project: 'Projects',
-            skill: 'Skills',
-            info: 'Contact Me'
-          }
+    return{
+      resume: {},
+      language: 'zh-CN',
+      subtitles: {
+        'zh-CN': {
+          overview: '个人简介',
+          project: '项目经历',
+          skill: '专业技能',
+          info: '了解更多'
+        },
+        'En': {
+          overview: 'Overview',
+          project: 'Projects',
+          skill: 'Skills',
+          info: 'Contact Me'
         }
       }
+    }
   },
   computed: {
     titles: function () {
@@ -55,14 +55,16 @@ export default {
       this.$http.get('/static/resume-zh-CN.json').then((response)=>{
       this.resume = response.body
     })
-    }
+    },
   }
 
 }
 </script>
 
 <style>
-#app {
-
-}
+  body{
+    margin: 0;
+  }
+  #app{
+  }
 </style>

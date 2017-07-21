@@ -75,7 +75,7 @@
   .score{
     height:13px;
     border-radius:999em;
-    background-color: #74c8de;
+    background-color: #66b4ca;
   }
 
 
