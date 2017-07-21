@@ -20,7 +20,12 @@
 </template>
 <script type="text/ecmascript-6">
 export default{
-    name: 'introduction'
+  name: 'introduction',
+  data(){
+      return{
+
+      }
+  }
 }
 </script>
 

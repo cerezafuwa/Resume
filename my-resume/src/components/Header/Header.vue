@@ -1,23 +1,25 @@
 <template>
   <div id="header">
     <div class="header-content">
-      <span>{{ introduction }}</span>
-      <span>{{ project }}</span>
-      <span>{{ education }}</span>
+      <span><a href="#introduction">{{ nav_1 }}</a></span>
+      <span><a href="#skill">{{ nav_2 }}</a></span>
+      <span>{{ nav_3 }}</span>
+      <span>{{ nav_4 }}</span>
     </div>
   </div>
 
 </template>
 <script type="text/ecmascript-6">
+  import skill from "../Skill/Skill";
+  import introduction from "../Introduction/Introduction";
+
   export default {
     name: 'header',
     data() {
       return {
-        introduction:'Introduction',
-        project: 'Project',
-        education: 'Education'
       }
-    }
+    },
+    props:['nav_1','nav_2','nav_3','nav_4']
   }
 </script>
 

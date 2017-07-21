@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <v-header></v-header>
+    <v-header :nav_1="resume.nav_1" :nav_2="resume.nav_2" :nav_3="resume.nav_3" :nav_4="resume.nav_4"></v-header>
     <introduction></introduction>
     <skill :titleName="titles.skill" :skills="resume.skills"></skill>
 
@@ -51,7 +51,7 @@ export default {
     '$route':'fetchData'
   },
   methods:{
-    fetchData(){
+    fetchData: function(){
       this.$http.get('/static/resume-zh-CN.json').then((response)=>{
       this.resume = response.body
     })

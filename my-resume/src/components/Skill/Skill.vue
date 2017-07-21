@@ -6,8 +6,7 @@
         <li v-for="skill in skills">
           <p>{{skill.name.toUpperCase()}}</p>
           <div class="score-container">
-            <svg :style="getLengthStyle(skill)" class="score" xmlns:xlink="http://www.w3.org/1999/xhtml">
-            </svg>
+            <div :style="getLengthStyle(skill)" class="score"></div>
           </div>
         </li>
       </ul>
